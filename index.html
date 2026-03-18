@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kauã Lopes | Portfólio</title>
+
+  <!-- Google Fonts: DM Serif Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <!-- ==========================================
+       NAVEGAÇÃO PRINCIPAL (fixa no topo)
+  =========================================== -->
+  <nav>
+    <div class="nav-inner">
+      <!-- Logo/nome clicável que volta ao topo -->
+      <a href="#sobre" class="nav-logo">Kauã Lopes</a>
+
+      <!-- Menu de navegação desktop -->
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <div style="display:flex; gap:0.75rem; align-items:center;">
+        <!-- Botão para alternar tema claro/escuro -->
+        <button id="theme-toggle" title="Alternar tema">🌙 Escuro</button>
+        <!-- Botão hamburguer (visível apenas em mobile) -->
+        <button id="menu-toggle" aria-label="Abrir menu">☰</button>
+      </div>
+    </div>
+
+    <!-- Menu expandido no mobile -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#sobre"     onclick="closeMobileMenu()">Sobre</a>
+      <a href="#formacao"  onclick="closeMobileMenu()">Formação</a>
+      <a href="#portfolio" onclick="closeMobileMenu()">Portfólio</a>
+      <a href="#contato"   onclick="closeMobileMenu()">Contato</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ==========================================
+         SEÇÃO 1 — SOBRE MIM
+    =========================================== -->
+    <section id="sobre">
+      <p class="section-label">Sobre mim</p>
+
+      <h1>Kauã Lopes<br /><em>Conceição.</em></h1>
+
+      <p class="hero-intro">
+        Profissional de TI em transição para a área de Dados. Experiência prática
+        como Auxiliar de Informática no Atacadão, onde desenvolvo dashboards de BI,
+        pipelines de dados e soluções de infraestrutura que geram impacto real nos
+        resultados da empresa.
+      </p>
+
+      <!-- Chips de informações rápidas -->
+      <div class="chips">
+        <span class="chip">📍 Boa Vista – RR</span>
+        <span class="chip">🎓 ADS – Uninter</span>
+        <span class="chip">💼 Auxiliar de Informática · Atacadão</span>
+        <span class="chip">📊 Dados & BI</span>
+      </div>
+
+      <p class="section-label" style="margin-top:2.5rem;">Interesses &amp; Hobbies</p>
+
+      <!-- Cards de hobbies -->
+      <div class="hobbies-grid">
+        <div class="hobby-card">
+          <div class="hobby-icon">📊</div>
+          <h3>Análise de Dados</h3>
+          <p>Explorar conjuntos de dados e encontrar padrões relevantes.</p>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">🖥️</div>
+          <h3>Hardware & Redes</h3>
+          <p>Montagem, manutenção e configuração de infraestrutura de TI.</p>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">🐍</div>
+          <h3>Programação</h3>
+          <p>Automação de processos com Python e scripts utilitários.</p>
+        </div>
+        <div class="hobby-card">
+          <div class="hobby-icon">🎮</div>
+          <h3>Tecnologia</h3>
+          <p>Acompanhar tendências em IA, cloud e arquitetura de sistemas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SEÇÃO 2 — FORMAÇÃO
+    =========================================== -->
+    <section id="formacao">
+      <p class="section-label">Formação &amp; Habilidades</p>
+      <h2>Educação &amp; Experiência</h2>
+
+      <!-- Timeline de formação e experiência -->
+      <div class="timeline" style="margin-top:2rem;">
+
+        <!-- Formação acadêmica atual -->
+        <div class="timeline-item">
+          <span class="timeline-date">Jun/2025 – Dez/2027</span>
+          <div class="timeline-content">
+            <h3>Análise e Desenvolvimento de Sistemas (CST)</h3>
+            <div class="inst">Uninter · Cursando</div>
+            <p>Graduação tecnológica com foco em desenvolvimento de software e sistemas de informação.</p>
+          </div>
+        </div>
+
+        <!-- Experiência profissional atual -->
+        <div class="timeline-item">
+          <span class="timeline-date">Out/2023 – Atual</span>
+          <div class="timeline-content">
+            <h3>Auxiliar de Informática · Atacadão</h3>
+            <div class="inst">Experiência Profissional</div>
+            <p>Suporte técnico, dashboards de BI (Looker Studio / Power BI), pipeline de dados com Python + SQLite.
+               Solução escalada para 50 filiais — reduziu 26h mensais de trabalho manual.</p>
+          </div>
+        </div>
+
+        <!-- Cursos técnicos complementares -->
+        <div class="timeline-item">
+          <span class="timeline-date">2018 – 2021</span>
+          <div class="timeline-content">
+            <h3>Cursos Técnicos em Informática</h3>
+            <div class="inst">DATACONTROL · GUIA INFORMÁTICA · EVOLUÇÃO INFORMÁTICA</div>
+            <p>Montagem e manutenção de microcomputadores (300h), informática profissional (250h) e operador de microcomputador (200h).</p>
+          </div>
+        </div>
+
+        <!-- Cursos complementares recentes -->
+        <div class="timeline-item">
+          <span class="timeline-date">Recente</span>
+          <div class="timeline-content">
+            <h3>Cursos Complementares</h3>
+            <div class="inst">Certificações Online</div>
+            <p>Modelagem e Arquitetura de Banco de Dados · Introdução a Banco de Dados · Versionamento com Git e GitHub.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Habilidades técnicas exibidas como tags -->
+      <p class="section-label" style="margin-top:2.5rem;">Habilidades Técnicas</p>
+      <div class="skills-grid">
+        <span class="skill-tag">Power BI</span>
+        <span class="skill-tag">Looker Studio</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Excel Avançado</span>
+        <span class="skill-tag">Git / GitHub</span>
+        <span class="skill-tag">SQLite</span>
+        <span class="skill-tag">Airflow (em estudo)</span>
+        <span class="skill-tag">Suporte Técnico</span>
+        <span class="skill-tag">Redes</span>
+        <span class="skill-tag">Hardware</span>
+        <span class="skill-tag">Windows</span>
+      </div>
+
+      <!-- Idiomas -->
+      <p class="section-label" style="margin-top:2rem;">Idiomas</p>
+      <div class="skills-grid">
+        <span class="skill-tag">🇧🇷 Português — Nativo</span>
+        <span class="skill-tag">🇺🇸 Inglês — Básico (leitura técnica)</span>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SEÇÃO 3 — PORTFÓLIO
+    =========================================== -->
+    <section id="portfolio">
+      <p class="section-label">Portfólio</p>
+      <h2>Projetos &amp; Trabalhos</h2>
+
+      <!-- Grade de projetos -->
+      <div class="portfolio-grid" style="margin-top:2rem;">
+
+        <!-- Projeto 1: Dashboard de BI -->
+        <div class="project-card">
+          <div class="project-icon">📊</div>
+          <h3>Dashboard de Desempenho de Vendas</h3>
+          <p>Painéis interativos no Looker Studio e Power BI para monitorar vendedores e identificar gaps comerciais. Resultado: +20% na taxa de atendimento e +15% nas vendas.</p>
+          <div class="project-tags">
+            <span class="project-tag">Power BI</span>
+            <span class="project-tag">Looker Studio</span>
+            <span class="project-tag">BI</span>
+          </div>
+          <div class="card-footer">
+            <span>Projeto profissional</span>
+          </div>
+        </div>
+
+        <!-- Projeto 2: Pipeline de dados -->
+        <div class="project-card">
+          <div class="project-icon">🐍</div>
+          <h3>Pipeline de Rastreio com Python + SQLite</h3>
+          <p>Substituição de controle manual por rastreio digital em tempo real. Escalado para 50 filiais — eliminou 26h mensais de trabalho e reduziu perdas em 15%.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">SQLite</span>
+            <span class="project-tag">Automação</span>
+          </div>
+          <div class="card-footer">
+            <span>Projeto profissional</span>
+          </div>
+        </div>
+
+        <!-- Projeto 3: Portfólio web (este site) -->
+        <a class="project-card" href="https://github.com" target="_blank" rel="noopener">
+          <div class="project-icon">🌐</div>
+          <h3>Portfólio Online (este site)</h3>
+          <p>Site de portfólio desenvolvido com HTML5, CSS3 e JavaScript puro. Single Page com navegação por âncoras, tema claro/escuro e formulário validado via JS.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML5</span>
+            <span class="project-tag">CSS3</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <div class="card-footer">
+            <span>Ver no GitHub →</span>
+          </div>
+        </a>
+
+        <!-- Projeto 4: Infraestrutura -->
+        <div class="project-card">
+          <div class="project-icon">🖧</div>
+          <h3>Infraestrutura & Suporte TI</h3>
+          <p>Configuração de redes lógicas, roteadores e switches, manutenção preventiva/corretiva de hardware e atendimento de chamados técnicos no Atacadão.</p>
+          <div class="project-tags">
+            <span class="project-tag">Redes</span>
+            <span class="project-tag">Hardware</span>
+            <span class="project-tag">Suporte</span>
+          </div>
+          <div class="card-footer">
+            <span>Experiência profissional</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SEÇÃO 4 — CONTATO
+    =========================================== -->
+    <section id="contato">
+      <p class="section-label">Contato</p>
+      <h2>Vamos conversar?</h2>
+
+      <div class="contact-layout" style="margin-top:2rem;">
+
+        <!-- Informações de contato direto -->
+        <div class="contact-info">
+          <p>Estou aberto a oportunidades de estágio e projetos na área de dados. Sinta-se à vontade para entrar em contato!</p>
+
+          <div class="contact-links" style="margin-top:1.5rem;">
+            <a class="contact-link" href="mailto:kalopes282@gmail.com">
+              ✉️ kalopes282@gmail.com
+            </a>
+            <a class="contact-link" href="tel:+5595991332691">
+              📱 (95) 9 9133-2691
+            </a>
+            <a class="contact-link" href="https://github.com" target="_blank" rel="noopener">
+              💻 GitHub
+            </a>
+            <a class="contact-link" href="https://linkedin.com" target="_blank" rel="noopener">
+              🔗 LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <!-- Formulário de contato com validação JavaScript -->
+        <form id="contact-form" novalidate>
+
+          <!-- Campo Nome -->
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" />
+            <span class="error-msg" id="erro-nome">Por favor, informe seu nome.</span>
+          </div>
+
+          <!-- Campo E-mail -->
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" />
+            <span class="error-msg" id="erro-email">Informe um e-mail válido (ex: usuario@dominio.com).</span>
+          </div>
+
+          <!-- Campo Mensagem -->
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+            <span class="error-msg" id="erro-mensagem">Por favor, escreva uma mensagem.</span>
+          </div>
+
+          <button type="submit" class="btn-submit">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       RODAPÉ
+  =========================================== -->
+  <footer>
+    <p>© 2025 Kauã Lopes Conceição · Feito com HTML5, CSS3 e JavaScript</p>
+  </footer>
+
+  <!-- ==========================================
+       MODAL DE CONFIRMAÇÃO DE ENVIO
+  =========================================== -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-box">
+      <div class="modal-icon">✅</div>
+      <h2>Mensagem enviada!</h2>
+      <p>Obrigado pelo contato. Retornarei em breve.</p>
+      <button class="btn-close" id="modal-close">Fechar</button>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       JAVASCRIPT
+       Responsável por:
+       1. Alternância de tema claro/escuro
+       2. Menu mobile hamburguer
+       3. Validação e simulação de envio do formulário
+       4. Modal de confirmação
+  =========================================== -->
+  <script src="./js/main.js" defer></script>
+
+</body>
+</html>
